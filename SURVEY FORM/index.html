@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
  <div id="container">
   <h1 id="title">Survey Form</h1>
-  <form id="survey-form" action="Submit">
-    <p id="description">Let us know how we can improve freeCodeCamp</p>
+  <p id="description">Let us know how we can improve freeCodeCamp</p>
+  <form id="survey-form">
    <div class="row">
      <div class="Left">
       <label id="name-label" for="name">* Name:</label>
@@ -28,7 +29,7 @@
    </div>
    <div class="row">
      <div class="Left">
-       <label id="number-label">* Age:</label>
+       <label id="number-label" for="number">* Age:</label>
      </div>
      <div class="Right">
       <input type="number" id="number" min="18" max="99" placeholder="Select Your Age">
@@ -36,10 +37,10 @@
    </div>
     <div class="row">
      <div class="Left">
-        <label for="currentPos">Which option describes your current role?</label>
+        <label for="dropdown">Which option describes your current role?</label>
     </div>
      <div class="Right">
-       <select id="dropdown" placeholder="Select an option">
+       <select id="dropdown">
         <option disabled selected value>Select an option</option>
         <option value="student">Student</option>
         <option value="fulltimejob">Full Time Job</option>
@@ -63,7 +64,7 @@
       <label>What do you like most in FCC:</label>
       </div>
       <div class="Right">
-        <select placeholder="Select an option">
+        <select>
           <option disabled selected value>Select an option</option>
           <option value="challenges">Challenges</option>
           <option value="projects">Projects</option>
@@ -100,7 +101,6 @@
    <div class="row">
      <p><button class="button" id="submit" type="submit">Submit</button></p>
    </div>
- </form>
-   </div>
+ </form></div>
 </body>
 </html>
